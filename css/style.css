@@ -1,3 +1,59 @@
 body {
-	margin: 8px;
+	background: #0095D8;
+}
+
+/*navbar*/
+nav {
+	background: blue;
+	height: 50px;
+}
+nav > a {
+	margin-right: 8px;
+	color: white;
+	font-size: 16px;
+	position: relative;
+	top: 12px;
+}
+h1 {
+	color: white;
+	margin-left: 100px;
+	font-family: "Times New Roman";
+	font-weight: bold;
+	font-size: 45px;
+}
+
+/*details form*/
+#containerdetails {
+	border: 2px solid black;
+	width: 425px;
+	margin: 10px;
+	margin-left: 540px;
+	box-shadow: 2px 5px black;
+}
+#details {
+	text-align: center;
+	border: 2px solid blue;
+	width: 400px;
+	margin: 10px;
+	color: white;
+}
+
+/*navbar links*/
+nav > a:link, a:visited {
+	text-decoration: none;
+	position: relative;
+	float: right;
+}
+nav > a:hover, a:active {
+	color: orange;
+}
+
+/*survey list links*/
+li > a:link, a:visited {
+	text-decoration: none;
+	color: white;
+	font-size: 30px;
+}
+li > a:hover, a:active {
+	color: orange;
 }
