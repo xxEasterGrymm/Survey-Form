@@ -1,1 +1,2 @@
 *.php linguist-language=Hack
+index.php linguist-language=HTML
