@@ -16,7 +16,7 @@ nav > a {
 }
 h1 {
 	color: white;
-	margin-left: 100px;
+	margin-left: 125px;
 	font-family: "Times New Roman";
 	font-weight: bold;
 	font-size: 45px;
@@ -25,7 +25,7 @@ h1 {
 /*details form*/
 #containerdetails {
 	border: 2px solid black;
-	width: 425px;
+	width: 450px;
 	margin: 10px;
 	margin-left: 540px;
 	box-shadow: 2px 5px black;
@@ -33,7 +33,7 @@ h1 {
 #details {
 	text-align: center;
 	border: 2px solid blue;
-	width: 400px;
+	width: 425px;
 	margin: 10px;
 	color: white;
 }
