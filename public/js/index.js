@@ -1,16 +1,17 @@
-function test() {
-  alert('bruh');
-}
 function validateForm() {
   console.log(5);
-  var a = document.forms["Form"]["name"].value;
-  var b = document.forms["Form"]["age"].value;
-  var c = document.forms["Form"]["address"].value;
-  var d = document.forms["Form"]["email"].value;
-  var e = document.forms["Form"]["gender"].value;
-  var f = document.forms["Form"]["quali"].value;
-  if (a == "" || b == "" || c == "" || d == "" || e == "Select" || f == "Select Qualification") {
-    alert("Please Fill all the fields");
+  var name = document.forms["Form"]["name"].value;
+  var age = document.forms["Form"]["age"].value;
+  var address = document.forms["Form"]["address"].value;
+  var email = document.forms["Form"]["email"].value;
+  var gender = document.forms["Form"]["gender"].value;
+  var quali = document.forms["Form"]["quali"].value;
+  if ( name== "" || age == "" || address == "" || email == "" || gender == "Select" || quali == "Select Qualification") {
+    alert("Please fill all the fields");
+    return false;
+  }
+  else if(age > 120) {
+    alert("Please enter a valid age!");
     return false;
   }
 }

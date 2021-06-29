@@ -16,23 +16,25 @@
 	</nav>
 	<div id="containerdetails">
 		<div id="details">
-			<form action=insert.php  method= POST/GET name="Form" onsubmit="return validateForm();"><h4>Please enter your details</h4>
-            	<label for="name">Name </label>
+			<form action=insert.php  method= POST/GET name="Form" onsubmit="return validateForm();">
+				<font face="bold" size="6px">Please enter your details</font><br/>
+				<font color="red" size="2px">(Please fill out all the fields marked *)</font><br/><br/>
+            	<label for="name">Name </label> <font color="red"><sup>*</sup></font>
             	<input type="text" for="name" placeholder="Enter your name" id="name" name="name"></input><br><br>
-				<label for="age">Age </label>
+				<label for="age">Age </label> <font color="red"><sup>*</sup></font>
 				<input type="number" for="age" placeholder="Enter your age" id="age" name="age"></input><br><br>
-				<label for="address">Address </label>
+				<label for="address">Address </label> <font color="red"><sup>*</sup></font>
 				<input type="text" for="address" placeholder="Enter your address" id="address" name="address"></input><br><br>
-				<label for="email">Email ID </label>
+				<label for="email">Email ID </label> <font color="red"><sup>*</sup></font>
 				<input type="email" for="email" placeholder="Enter your Email ID" id="email" name="email"></input><br><br>
-				<label>Gender:</label>
+				<label>Gender:</label> <font color="red"><sup>*</sup></font>
   		    	<select name="gender" id="gender">
   					<option>Select Gender</option>
   					<option>Male</option>
   					<option>Female</option>
   					<option>Other</option>
 				</select><br/><br>
-				<label for="quali">Educational Qualification</label>
+				<label for="quali">Educational Qualification</label> <font color="red"><sup>*</sup></font>
 			    <select name="quali" id="quali">
     				<option>Select Qualification</option>
     				<option>Secondary(Class 10th)</option>
@@ -46,7 +48,7 @@
 		</div>
 	</div>
 	<div>
-		<ul> <h4>Which survey do you want to take?</h4>
+		<ul><h4>Which survey do you want to take?</h4>
 			<li><a href="topic1.html">Preferred job--></a></li>
 			<li><a href="">Preferred courses for higher studies--></a></li>
 			<li><a href="">Top university choices for B.Tech--></a></li>
