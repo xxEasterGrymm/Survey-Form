@@ -1,1 +1,2 @@
-*.php linguist-language=PHP
+index.php linguist-language=HTML
+insert.php linguist-language=PHP
