@@ -6,7 +6,7 @@
 	<meta name = "viewport" content = "width=device-width,initial-scale=1">
 	<title>Survey Form</title>
 	<link rel="stylesheet" href="../src/css/bootstrap.min.css">
-	<link rel="stylesheet" href="../src/css/style.css">
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	<nav>
@@ -16,7 +16,7 @@
 	</nav>
 	<div id="containerdetails">
 		<div id="details">
-			<form action=insert.php  method= POST/GET><h4>Please enter your details</h4>
+			<form action=insert.php  method= POST/GET name="Form" onsubmit="return validateForm();"><h4>Please enter your details</h4>
             	<label for="name">Name </label>
             	<input type="text" for="name" placeholder="Enter your name" id="name" name="name"></input><br><br>
 				<label for="age">Age </label>
@@ -26,14 +26,14 @@
 				<label for="email">Email ID </label>
 				<input type="email" for="email" placeholder="Enter your Email ID" id="email" name="email"></input><br><br>
 				<label>Gender:</label>
-  		    	<select name="gender">
+  		    	<select name="gender" id="gender">
   					<option>Select Gender</option>
   					<option>Male</option>
   					<option>Female</option>
   					<option>Other</option>
 				</select><br/><br>
 				<label for="quali">Educational Qualification</label>
-			    <select name="quali">
+			    <select name="quali" id="quali">
     				<option>Select Qualification</option>
     				<option>Secondary(Class 10th)</option>
     				<option>Higher Secondary(Class 12th)</option>
@@ -41,7 +41,7 @@
     				<option>Bachelor's Degree</option>
     				<option>Master's Degree</option>
     			</select><br/><br>
-    			<input type="submit"><br/><br/>
+    			<input type="submit" onsubmit="return validateForm();"><br/><br/>
     		</form>
 		</div>
 	</div>
@@ -54,6 +54,6 @@
 	</div>
 	<script src="../src/js/jquery-3.6.0.min.js"></script>
 	<script src="../src/js/bootstrap.min.js"></script>
-	<script src="../src/js/index.js"></script>
+	<script src="js/index.js"></script>
 </body>
 </html>
