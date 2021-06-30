@@ -17,7 +17,7 @@
 		   		VALUES ('$name', '$age', '$address', '$email', '$gender', '$quali')";
        	if(mysqli_query($conn, $sql)) {
        		echo "<h3>Response recorded successfully.</h3>";
-      		echo nl2br("\nName - $name\n Age - $age\nAddress - $address\nEmail ID - $email\nGender - $gender\nEducational Qualification$quali");
+      		echo nl2br("\nName - $name\n Age - $age\nAddress - $address\nEmail ID - $email\nGender - $gender\nEducational Qualification - $quali");
       	}
      else {
       		echo "ERROR: Sorry! $sql. ". mysqli_error($conn);
