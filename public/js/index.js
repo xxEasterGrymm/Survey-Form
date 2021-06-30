@@ -7,7 +7,7 @@ function validateForm() {
   var gender = document.forms["Form"]["gender"].value;
   var quali = document.forms["Form"]["quali"].value;
   if ( name== "" || age == "" || address == "" || email == "" || gender == "Select" || quali == "Select Qualification") {
-    alert("Please fill all the fields");
+    alert("Please fill all the fields before proceeding");
     return false;
   }
   else if(age > 120) {
