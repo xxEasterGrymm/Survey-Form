@@ -1,11 +1,13 @@
 body {
 	background-image: url('../images/blue.jpg');
+	overflow-x: hidden;
+	overflow-y: scroll;
 }
 
 /*navbar*/
 nav {
 	background: black;
-	height: 120px;
+	height: 125px;
 	box-shadow: 0 4px 4px 0 rgba(0,0,0,.2);
 }
 nav > a {
