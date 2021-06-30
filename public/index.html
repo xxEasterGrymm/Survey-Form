@@ -9,44 +9,46 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<nav>
+	<nav class="container-fluid">
 		<a href = "index.php">Home</a>
 		<a href="about.html">About Us</a>
-		<h1 align="center">Survey Form</h1>
+		<div class="col-lg-12  col-sm-6 col-8"><h1 align="center">Survey Form</h1></div>
 	</nav>
-	<div id="containerdetails">
-		<div id="details">
-			<form action=php/insert.php  method= POST/GET name="Form" onsubmit="return validateForm();">
-				<font face="bold" size="6px">Please enter your details</font><br/>
-				<font color="red" size="2px">(Please fill out all the fields marked *)</font><br/><br/>
-            	<label for="name">Name </label> <font color="red"><sup>*</sup></font>
-            	<input type="text" for="name" placeholder="Enter your name" id="name" name="name"></input><br><br>
-				<label for="age">Age </label> <font color="red"><sup>*</sup></font>
-				<input type="number" for="age" placeholder="Enter your age" id="age" name="age"></input><br><br>
-				<label for="address">Address </label> <font color="red"><sup>*</sup></font>
-				<input type="text" for="address" placeholder="Enter your address" id="address" name="address"></input><br><br>
-				<label for="email">Email ID </label> <font color="red"><sup>*</sup></font>
-				<input type="email" for="email" placeholder="Enter your Email ID" id="email" name="email"></input><br><br>
-				<label>Gender:</label> <font color="red"><sup>*</sup></font>
-  		    	<select name="gender" id="gender">
-  					<option>Select Gender</option>
-  					<option>Male</option>
-  					<option>Female</option>
-  					<option>Other</option>
-				</select><br/><br>
-				<label for="quali">Educational Qualification</label> <font color="red"><sup>*</sup></font>
-			    <select name="quali" id="quali">
-    				<option>Select Qualification</option>
-    				<option>Secondary(Class 10th)</option>
-    				<option>Higher Secondary(Class 12th)</option>
-    				<option>Diploma</option>
-    				<option>Bachelor's Degree</option>
-    				<option>Master's Degree</option>
-    			</select><br/><br>
-    			<input type="submit" onsubmit="return validateForm();"><br/><br/>
-    		</form>
+	<center>
+		<div id="containerdetails" class="container-fluid">
+			<div id="details" class="col-md-4 col-sm-6">
+				<form action=php/insert.php  method= POST/GET name="Form" onsubmit="return validateForm();">
+					<font face="bold" size="6px">Please enter your details</font><br/>
+					<font color="red" size="2px">(Please fill out all the fields marked *)</font><br/><br/>
+    	        	<label for="name">Name </label> <font color="red"><sup>*</sup></font>
+    	        	<input type="text" for="name" placeholder="Enter your name" id="name" name="name"></input><br><br>
+					<label for="age">Age </label> <font color="red"><sup>*</sup></font>
+					<input type="number" for="age" placeholder="Enter your age" id="age" name="age"></input><br><br>
+					<label for="address">Address </label> <font color="red"><sup>*</sup></font>
+					<input type="text" for="address" placeholder="Enter your address" id="address" name="address"></input><br><br>
+					<label for="email">Email ID </label> <font color="red"><sup>*</sup></font>
+					<input type="email" for="email" placeholder="Enter your Email ID" id="email" name="email"></input><br><br>
+					<label>Gender:</label> <font color="red"><sup>*</sup></font>
+  			    	<select name="gender" id="gender">
+  						<option>Select Gender</option>
+  						<option>Male</option>
+  						<option>Female</option>
+  						<option>Other</option>
+					</select><br/><br>
+					<label for="quali">Educational Qualification</label> <font color="red"><sup>*</sup></font>
+				    <select name="quali" id="quali">
+    					<option>Select Qualification</option>
+    					<option>Secondary(Class 10th)</option>
+    					<option>Higher Secondary(Class 12th)</option>
+    					<option>Diploma</option>
+    					<option>Bachelor's Degree</option>
+    					<option>Master's Degree</option>
+    				</select><br/><br>
+    				<input type="submit" onsubmit="return validateForm();"><br/><br/>
+    			</form>
+			</div>
 		</div>
-	</div>
+	</center>
 	<div>
 		<ul><h4>Which survey do you want to take?</h4>
 			<li><a href="html/topic1.html">Preferred job--></a></li>
