@@ -1,39 +1,36 @@
 body {
-	background: #0095D8;
+	background-image: url('../images/blue.jpg');
 }
 
 /*navbar*/
 nav {
-	background: blue;
-	height: 50px;
+	background: black;
+	height: 120px;
+	box-shadow: 0 4px 4px 0 rgba(0,0,0,.2);
 }
 nav > a {
 	margin-right: 8px;
 	color: white;
-	font-size: 16px;
-	position: relative;
-	top: 12px;
+	font-size: 16px;	;
 }
 h1 {
 	color: white;
-	margin-left: 125px;
 	font-family: "Times New Roman";
 	font-weight: bold;
 	font-size: 45px;
+	margin-left: 125px;
+	position: relative;
+	top: 20px
 }
 
 /*details form*/
 #containerdetails {
-	border: 2px solid black;
-	width: 450px;
 	margin: 10px;
-	margin-left: 540px;
-	box-shadow: 2px 5px black;
 }
 #details {
 	text-align: center;
-	border: 2px solid blue;
-	width: 425px;
+	border: 2px solid black;
+	box-shadow: 0 2px 5px black;
 	margin: 10px;
 	color: white;
 }
