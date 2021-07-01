@@ -35,7 +35,7 @@
 				       	$sql = "INSERT INTO `answers` (`name`, `age`, `address`, `Email ID`, `Gender`, `Educational Qualification`)
 						   		VALUES ('$name', '$age', '$address', '$email', '$gender', '$quali')";
 				       	if(mysqli_query($conn, $sql)) {
-				       		echo "<h3>Response recorded successfully.</h3>";
+				       		echo '<h3><font color="green">Response recorded successfully.</font> ✅</h3>';
 				      		echo nl2br("\nName - $name\n Age - $age\nAddress - $address\nEmail ID - $email\nGender - $gender\nEducational Qualification - $quali");
 				      	}
 				     else {
