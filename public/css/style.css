@@ -32,6 +32,7 @@ h1 {
 #details {
 	text-align: center;
 	border: 2px solid black;
+	border-radius: 15px;
 	box-shadow: 0 2px 5px black;
 	margin: 10px;
 	color: white;
@@ -69,7 +70,7 @@ input, select {
 	font-family: 'Times New Roman';
 	border: 2px solid black;
 	border-radius: 25px;
-	box-shadow: 0 2px 5px white;
+	box-shadow: 0 2px 5px black;
 	margin: 20px;
 	color:white;
 	font-size: 20px;
