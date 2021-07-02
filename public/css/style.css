@@ -1,5 +1,6 @@
 body {
-	background-image: url('../images/blue.jpg');
+	/*background-image: url('../images/blue.jpg');*/
+	background-image: linear-gradient(to right, #fcde67 ,#ffa011);
 	overflow-x: hidden;
 	overflow-y: scroll;
 }
@@ -13,16 +14,16 @@ nav {
 nav > a {
 	margin-right: 8px;
 	color: white;
-	font-size: 16px;	;
+	font-size: 16px;
 }
 h1 {
 	color: white;
 	font-family: "Times New Roman";
 	font-weight: bold;
-	font-size: 45px;
+	font-size: 50px;
 	margin-left: 125px;
 	position: relative;
-	top: 20px
+	top: 20px;
 }
 
 /*details form*/
@@ -36,7 +37,7 @@ h1 {
 	box-shadow: 0 2px 5px black;
 	margin: 10px;
 	color: white;
-	background-color: deeppink;
+	background-image: linear-gradient(#d1adcc, #ed7966);
 }
 
 /*navbar links*/
@@ -67,34 +68,34 @@ input, select {
 /*topic1 header*/
 #t1head {
 	border: 2px solid pink;
-	background-image: linear-gradient(to right, red , yellow);
+	background-image: linear-gradient(to right, black , #1b4b89);
 	width: 650px;
 	height: 100px;
-	margin-left: 380px;
+	margin-left: 430px;
 	margin-top: 40px;
 	padding-top: 15px;
-	border-radius: 5px;
+	border-radius: 15px;
+	box-shadow: 5px 5px 0 0 black;
 }
 #t1head > h1 {
 	position: relative;
 	top: -1px;
 	padding-top: 5px;
 	margin-left: 100px;
-	font-family: Arial, Helvetica, sans-serif;
 }
 /*topic1 survey form*/
 #t1form {
 	font-family: 'Times New Roman';
-	border: 2px solid black;
 	border-radius: 25px;
-	box-shadow: 0 2px 5px black;
+	box-shadow: 0 2px 5px 0 black;
 	margin: 20px;
 	font-size: 20px;
 	padding-left: 5%;
-	background-color: deeppink;
+	padding-bottom: 30px;
+	background-image: linear-gradient(#d1adcc, #ed7966);
 }
 #t1box {
-	box-shadow: 0 0px 10px blue;
+	box-shadow: 0 2px 5px 0 deeppink;
 	border-radius: 5px;
 	width: 1000px;
 	padding-left: 8px;
@@ -110,6 +111,23 @@ input, select {
 }
 
 /*topic2 survey form*/
+#t2head {
+	border: 2px solid pink;
+	background-image: linear-gradient(to right, black , #1b4b89);
+	width: 700px;
+	height: 150px;
+	margin-left: 430px;
+	margin-top: 40px;
+	padding-top: 15px;
+	border-radius: 15px;
+	box-shadow: 5px 5px 0 0 black;
+}
+#t2head > h1 {
+	position: relative;
+	top: -1px;
+	padding-top: 5px;
+	margin-left: 100px;
+}
 #t2form
 {
 	font-family: 'Times New Roman';
@@ -117,8 +135,9 @@ input, select {
 	border-radius: 25px;
 	box-shadow: 0 2px 5px black;
 	margin: 20px;
-	color:white;
+	color:black;
 	font-size: 20px;
 	padding-left: 5%;
-	background-color: deeppink;;
+	padding-bottom: 30px;
+	background-image: linear-gradient(#d1adcc, #ed7966);
 }
