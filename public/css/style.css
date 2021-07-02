@@ -64,23 +64,44 @@ input, select {
 	background-color: beige;
 }
 
+/*topic1 header*/
+#t1head {
+	border: 2px solid pink;
+	background-image: linear-gradient(to right, red , yellow);
+	width: 650px;
+	height: 100px;
+	margin-left: 380px;
+	margin-top: 40px;
+	padding-top: 15px;
+	border-radius: 5px;
+}
+#t1head > h1 {
+	position: relative;
+	top: -1px;
+	padding-top: 5px;
+	margin-left: 100px;
+	font-family: Arial, Helvetica, sans-serif;
+}
 /*topic1 survey form*/
-#t1form
-{
+#t1form {
 	font-family: 'Times New Roman';
 	border: 2px solid black;
 	border-radius: 25px;
 	box-shadow: 0 2px 5px black;
 	margin: 20px;
-	color:white;
 	font-size: 20px;
 	padding-left: 5%;
-	background-color: deeppink;;
+	background-color: deeppink;
 }
-
+#t1box {
+	box-shadow: 0 0px 10px blue;
+	border-radius: 5px;
+	width: 1000px;
+	padding-left: 8px;
+	background-image: url('https://images.unsplash.com/photo-1601662528567-526cd06f6582?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=358&q=80');
+}
 /*topic1 images*/
-.icons
-{
+.icons {
 	position: relative;
 	float: right;
 	clear: both;
