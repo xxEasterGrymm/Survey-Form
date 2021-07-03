@@ -12,16 +12,19 @@
 	<nav class="container-fluid">
 		<a href = "../index.html">Home</a>
 		<a href="about.html">About Us</a>
-		<div class="col-lg-12  col-sm-6 col-8"><h1 align="center">Survey Form</h1></div>
+		<div class="col-lg-12 col-sm-6 col-8"><h1 align="center">Survey Form</h1></div>
 	</nav>
 	<div>
 		<div id="t2head" class="col-lg-12 col-sm-6 col-8"><h1 align="center" style="padding-right: 9%; color:white;">General Survey on Mobile Phones</h1></div><br><br>
-        <form name="Form" id="t2form"  action="" method= POST/GET><br>
+        <form name="FormSurvey" id="t2form"  action="../php/survey.php" method= POST/GET onsubmit="return validateSurveyForm();">
+			<label>Are you willing to let us use your responses for analysis?</label>
+			<input type="radio" for="surveyForm" name="surveyForm" value="General Survey on Mobile Phones">Yes</input>
+			<input type="radio" for="surveyForm" name="surveyForm" value="No">No</input>
 			<img src="..\images\mobiles.png" height="500px" width="400px" align="right" class="icons">
 			<img src="..\images\mobiles2.png" height="500px" width="400px" align="right" class="icons">
 			<div id="t1box" class="col-md-4 col-sm-6">
 			<label for="Q1" style="color: red;">Quesiton 1: How  many mobiles have you owned in total?</label><br>
-          <input type="number"></input><br><br>
+          <input name="Q1" type="number"></input><br><br>
 		  <label for="Q2" style="color: red;">Question 2: Which brand(s) of mobile phones do you prefer the most?</label><br>
 		  Options:<br>
 		  <input type="radio" for="Q2" name="Q2" id="" value="Samsung">Samsung</input><br>
@@ -41,10 +44,10 @@
 		  <input type="radio" for="Q4" name="Q4" id="" value="I do not care about the quality of the camera on my phone.">I do not care about the quality of the camera on my phone.</input><br><br>
 		  <label for="Q5" style="color: red;">Question 5: How much storage do you need in your mobile phone?</label><br>
 		  Options:<br>
-		  <input type="radio" for="Q5" name="Q5" id="32 gb">32 gb</input><br>
-		  <input type="radio" for="Q5" name="Q5" id="64 gb">64 gb</input><br>
-		  <input type="radio" for="Q5" name="Q5" id="128 gb">128 gb</input><br>
-		  <input type="radio" for="Q5" name="Q5" id="256 gb">256 gb</input><br>
+		  <input type="radio" for="Q5" name="Q5" value="32 gb">32 gb</input><br>
+		  <input type="radio" for="Q5" name="Q5" value="64 gb">64 gb</input><br>
+		  <input type="radio" for="Q5" name="Q5" value="128 gb">128 gb</input><br>
+		  <input type="radio" for="Q5" name="Q5" value="256 gb">256 gb</input><br>
 		  <label for="Q6" style="color: red;">Question 6: Do you play videogames on your mobile phone?</label><br>
 		  Options:<br>
 		  <input type="radio" for="Q6" name="Q6" id="" value="I play games on my mobile daily and it has become a hobby.">I play games on my mobile daily and it has become a hobby.</input><br>
@@ -60,7 +63,7 @@
 		  <input type="radio" for="Q8" name="Q8" id="" value="Yes">Yes</input><br>
 		  <input type="radio" for="Q8" name="Q8" id="" value="No">No</input><br>
 		  <input type="radio" for="Q8" name="Q8" id="" value="Depends on what the person is using the phone for.">Depends on what the person is using the phone for.</input><br><br>
-		  <input type="submit"><br><br>
+		  <input type="submit" value="Submit"><br><br>
 		  </div>
 		</form>
 	</div>
