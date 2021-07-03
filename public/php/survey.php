@@ -46,7 +46,7 @@
 								`Question 8` = '$arr[7]'   
 							WHERE `S. no.` = $num";
                     if(mysqli_query($conn, $sql)) {
-                        echo '<h3><font color="lightgreen">Your response has been recorded.</font> ✅</h3>';
+                        echo '<br><h3><font color="green">Your response has been recorded.</font> ✅</h3>';
                     }
                     else {
                         echo "ERROR: Sorry! $sql. ". mysqli_error($conn);
