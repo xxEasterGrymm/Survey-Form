@@ -8,7 +8,7 @@ body {
 /*navbar*/
 nav {
 	background: black;
-	height: 125px;
+	height: 135px;
 	box-shadow: 0 4px 4px 0 rgba(0,0,0,.2);
 }
 nav > a {

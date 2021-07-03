@@ -14,26 +14,32 @@
 		<a href="about.html">About Us</a>
 		<div class="col-lg-12 col-sm-6 col-8"><h1 align="center">Survey Form</h1></div>
 	</nav>
-	<div>
-		<div id="t1head" class="col-lg-12 col-sm-6 col-8"><h1 align="center" style="padding-right: 9%; color:white;">Web Browser Review</h1></div><br>
-		<form name="Form" id="t1form" action="../php/survey1.php" method= POST/GET><br>
-		  <img class="icons" src="https://image.flaticon.com/icons/png/512/183/183316.png" height="100px" width="100px">
-		  <img class="icons" src="https://image.flaticon.com/icons/png/512/183/183320.png" height="100px" width="100px">
-		  <img class="icons" src="https://image.flaticon.com/icons/png/512/183/183317.png" height="100px" width="100px">
-		  <img class="icons" src="https://image.flaticon.com/icons/png/512/183/183323.png" height="100px" width="100px">
-		  <img class="icons" src="https://image.flaticon.com/icons/png/512/183/183322.png" height="100px" width="100px"><br>
-          <div id="t1box" class="col-md-4 col-sm-6">
+	<div class="container-fluid">
+		<div id="t1head" class="col-lg-12 col-sm-6 col-8"><h1 align="center">Web Browser Review</h1></div>
+	</div>
+	<div class="container-fluid">
+		<br>
+		<form name="FormSurvey" id="t1form" action="../php/survey.php" method= POST/GET onsubmit="return validateSurveyForm();"><br>
+			<label>Are you willing to let us use your responses for analysis?</label>
+			<input type="radio" for="surveyForm" name="surveyForm" value="Web Browser Review">Yes</input>
+			<input type="radio" for="surveyForm" name="surveyForm" value="No">No</input>
+		  	<img class="icons" src="https://image.flaticon.com/icons/png/512/183/183316.png" height="100px" width="100px">
+		  	<img class="icons" src="https://image.flaticon.com/icons/png/512/183/183320.png" height="100px" width="100px">
+		  	<img class="icons" src="https://image.flaticon.com/icons/png/512/183/183317.png" height="100px" width="100px">
+		  	<img class="icons" src="https://image.flaticon.com/icons/png/512/183/183323.png" height="100px" width="100px">
+		  	<img class="icons" src="https://image.flaticon.com/icons/png/512/183/183322.png" height="100px" width="100px"><br>
+          	<div id="t1box">
 				<label for="Q2" style="color: red;">Question 1: Which browser do you want to review?</label><br>
 		  		Options:<br>
 		  		<input type="radio" for="Q1" name="Q1" id="" value="Google Chrome">Google Chrome</input><br>
 		  		<input type="radio" for="Q1" name="Q1" id="" value="Mozilla Firefox">Mozilla Firefox</input><br>
 		  		<input type="radio" for="Q1" name="Q1" id="" value="Microsoft Edge">Microsoft Edge</input><br>
 		  		<input type="radio" for="Q1" name="Q1" id="" value="Safari">Safari</input><br>
-		  		<input type="radio" for="Q1" name="Q1" id="" value="Opera">Opera</input><br>
+		  		<input type="radio" for="Q1" name="Q1" id="" value="Opera">Opera</input><br><br>
 		  		<label for="Q2" style="color: red;">Question 2: How much have you used this browser?</label><br>
 		  		Options:<br>
 		  		<input type="radio" for="Q2" name="Q2" id="" value="This is the main browser I use.">This is the main browser I use.</input><br>
-		  		<input type="radio" for="Q2" name="Q2" id="" value="I have it on my computer but I don't use it as often as my main browser.">I have it on my computer but I don't use it as often as my main browser.</input><br>
+		  		<input type="radio" for="Q2" name="Q2" id="" value="I have it on my computer but I do not use it as often as my main browser.">I have it on my computer but I don't use it as often as my main browser.</input><br>
 		  		<input type="radio" for="Q2" name="Q2" id="" value="I removed it after I used it for a while because I did not like it/ I found a better browser.">I removed it after I used it for a while because I didn't like it/ I found a better browser.</input><br><br>
 		  		<label for="Q3" style="color: red;">Question 3: How would you rate the speed of this browser in opening pages and websites and loading files such as videos or images?</label><br>
 		  		Options:<br>
@@ -44,13 +50,13 @@
 		  		<label for="Q4" style="color: red;">Question 4: How much do you like the overall look and design aesthetics of the browser?</label><br>
 		  		Options:<br>
 		  		<input type="radio" for="Q4" name="Q4" id="" value="The browser is very well designed and the look makes using the browser fun and pleasing.">The browser is very well designed and the look makes using the browser fun and pleasing.</input><br>
-		  		<input type="radio" for="Q4" name="Q4" id="" value="I don't particularly like the look of this browser but it does not affect the usage.">I don't particularly like the look of this browser but it does not affect the usage.</input><br>
+		  		<input type="radio" for="Q4" name="Q4" id="" value="I do not particularly like the look of this browser but it does not affect the usage.">I don't particularly like the look of this browser but it does not affect the usage.</input><br>
 		  		<input type="radio" for="Q4" name="Q4" id="" value="The browser looks ugly and using it feels really bad because of the design.">The browser looks ugly and using it feels really bad because of the design.</input><br><br>
 		  		<label for="Q5" style="color: red;">Question 5: In your experience, how user-friendly has this browser been?</label><br>
 		  		Options:<br>
-		  		<input type="radio" for="Q5" name="Q5" id="Very user-friendly; the browser clearly explains how to use its different features.">Very user-friendly; the browser clearly explains how to use its different features.</input><br>
-		  		<input type="radio" for="Q5" name="Q5" id="Not that user-friendly but it didn't take much to get used to.">Not that user-friendly but it didn't take much to get used to.</input><br>
-		  		<input type="radio" for="Q5" name="Q5" id="Not user friendly at all; the browser took a long time to get used to.">Not user friendly at all; the browser took a long time to get used to.</input><br><br>
+		  		<input type="radio" for="Q5" name="Q5" value="Very user-friendly; the browser clearly explains how to use its different features.">Very user-friendly; the browser clearly explains how to use its different features.</input><br>
+		  		<input type="radio" for="Q5" name="Q5" value"Not that user-friendly but it didn't take much to get used to.">Not that user-friendly but it didn't take much to get used to.</input><br>
+		  		<input type="radio" for="Q5" name="Q5" value="Not user friendly at all; the browser took a long time to get used to.">Not user friendly at all; the browser took a long time to get used to.</input><br><br>
 		  		<label for="Q6" style="color: red;">Question 6: Do you think this browser has protected your privacy—e.g.<br> not let websites upload data from your computer or save passwords or other sensitive data,
 					or allow  cookies without asking?</label><br>
 		  		Options:<br>
@@ -59,7 +65,7 @@
 		  		<label for="Q7" style="color: red;">Question 7: How much does the browser affect the perfomance of your computer when it is running in the background?</label><br>
 		  		Options:<br>
 		  		<input type="radio" for="Q7" name="Q7" id="" value="It hardly affects the perfomance of other applications when it is running in the background.">It hardly affects the perfomance of other applications when it is running in the background.</input><br>
-		  		<input type="radio" for="Q7" name="Q7" id="" value="It doesn't hinder the performance of light applications when it is running in the background but it affects heavy applications such as videogames.">It doesn't hinder the performance of light applications when it is running in the background but it affects heavy applications such as videogames.</input><br>
+		  		<input type="radio" for="Q7" name="Q7" id="" value="It does not hinder the performance of light applications when it is running in the background but it affects heavy applications such as videogames.">It doesn't hinder the performance of light applications when it is running in the background but it affects heavy applications such as videogames.</input><br>
 		  		<input type="radio" for="Q7" name="Q7" id="" value="The browser is too demanding on the processor and memory, and makes other applications on my computer hard to use when it is running in the background.">The browser is too demanding on the processor and memory, and makes other applications on my computer hard to use when it is running in the background.</input><br><br>
 		  		<label for="Q8" style="color: red;">Question 8: How has you experience with this browser been in general?</label><br>
 		  		Options:<br>
@@ -67,7 +73,7 @@
 		  		<input type="radio" for="Q8" name="Q8" id="" value="Good">Good</input><br>
 		  		<input type="radio" for="Q8" name="Q8" id="" value="Fair">Fair</input><br>
 		  		<input type="radio" for="Q8" name="Q8" id="" value="Poor">Poor</input><br><br>
-		  		<input type="submit"><br><br>
+		  		<input type="submit" value="Submit"><br><br>
 		  </div>
 		</form>
 	</div>
