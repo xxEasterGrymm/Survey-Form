@@ -12,7 +12,7 @@
 	<nav class="container-fluid">
 		<a href = "../index.html">Home</a>
 		<a href="about.html">About Us</a>
-		<div class="col-lg-12  col-sm-6 col-8"><h1 align="center">Survey Form</h1></div>
+		<div class="col-lg-12  col-sm-6 col-8"><h1 align="center"><a href="../index.html">Survey Form</a></h1></div>
 	</nav>
 	<center>
 		<div id="containerdetails" class="container-fluid">
@@ -53,8 +53,5 @@
 			<li><a href="" onclick="return validateForm();">Top university choices for B.Tech--></a></li>
 		</ul>
 	</div>
-	<script src="../../src/js/jquery-3.6.0.min.js"></script>
-	<script src="../../src/js/bootstrap.min.js"></script>
-	<script src="../js/index.js"></script>
 </body>
 </html>

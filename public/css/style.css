@@ -1,5 +1,4 @@
 body {
-	/*background-image: url('../images/blue.jpg');*/
 	background-image: linear-gradient(to right, #fcde67 ,#ffa011);
 	overflow-x: hidden;
 	overflow-y: scroll;
