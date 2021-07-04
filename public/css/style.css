@@ -1,5 +1,6 @@
 body {
-	background-image: linear-gradient(to right, #fcde67 ,#ffa011);
+	background-image: linear-gradient(to right, #4E4E4E ,white);
+	background-color: #223C57;
 	overflow-x: hidden;
 	overflow-y: scroll;
 }
@@ -36,7 +37,7 @@ h1 {
 	box-shadow: 0 2px 5px black;
 	margin: 10px;
 	color: white;
-	background-image: linear-gradient(#d1adcc, #ed7966);
+	background: linear-gradient(to right, #223C57, #56A6D5);
 }
 
 /*navbar links*/
