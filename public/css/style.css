@@ -80,7 +80,7 @@ input, select {
 	position: relative;
 	top: -1px;
 	padding-top: 5px;
-	margin-left: 100px;
+	margin-left: 10px;
 }
 /*topic1 survey form*/
 #t1form {
@@ -113,7 +113,7 @@ input, select {
 #t2head {
 	border: 2px solid pink;
 	background-image: linear-gradient(to right, black , #1b4b89);
-	width: 700px;
+	width: 640px;
 	height: 150px;
 	margin-left: 430px;
 	margin-top: 40px;
@@ -124,10 +124,42 @@ input, select {
 #t2head > h1 {
 	position: relative;
 	top: -1px;
-	padding-top: 5px;
-	margin-left: 100px;
+	padding-top: 2px;
+	margin-left: 70px;
 }
 #t2form
+{
+	font-family: 'Times New Roman';
+	border: 2px solid black;
+	border-radius: 25px;
+	box-shadow: 0 2px 5px black;
+	margin: 20px;
+	color:black;
+	font-size: 20px;
+	padding-left: 5%;
+	padding-bottom: 30px;
+	background-image: linear-gradient(#d1adcc, #ed7966);
+}
+
+/*topic3 survey form*/
+#t3head {
+	border: 2px solid pink;
+	background-image: linear-gradient(to right, black , #1b4b89);
+	width: 780px;
+	height: 120px;
+	margin-left: 365px;
+	margin-top: 40px;
+	padding-top: 15px;
+	border-radius: 15px;
+	box-shadow: 5px 5px 0 0 black;
+}
+#t3head > h1 {
+	position: relative;
+	top: 9px;
+	padding-left: 5%;
+	margin-left: 110px;
+}
+#t3form
 {
 	font-family: 'Times New Roman';
 	border: 2px solid black;

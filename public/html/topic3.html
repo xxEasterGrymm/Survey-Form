@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE-edge">
+	<meta name = "viewport" content = "width=device-width,initial-scale=1">
+	<title>Survey Form</title>
+	<link rel="stylesheet" href="../../src/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+	<nav class="container-fluid">
+		<a href = "../index.html">Home</a>
+		<a href="about.html">About Us</a>
+		<div class="col-lg-12 col-sm-6 col-8"><h1 align="center">Survey Form</h1></div>
+	</nav>
+	<div>
+		<div id="t3head" class="col-lg-12 col-sm-6 col-8"><h1 align="center" style="padding-right: 17%; color:white;">Network Usage Survey</h1></div><br><br>
+        <form name="FormSurvey" id="t3form"  action="../php/survey.php" method= POST/GET onsubmit="return validateSurveyForm();"><br>
+		  <label>Are you willing to let us use your responses for analysis?</label>
+		  <input type="radio" for="surveyForm" name="surveyForm" value="Network Usage Survey">Yes</input>
+		  <input type="radio" for="surveyForm" name="surveyForm" value="No">No</input><br><br>
+          <img src="..\images\net1.png" height="450px" width="400px" align="right" class="icons" style="padding-left: 5%;">
+          <img src="..\images\net2.png" height="450px" width="400px" align="right" class="icons" style="padding-left: 5%;">
+          <div id="t1box" class="col-md-4 col-sm-6">
+		  <label for="Q1" style="color: red;">Question 1: Which do you use the internet most for?</label><br>
+          <input type="radio" for="Q1" name="Q1" id="" value="Work/School">Work/School</input><br>
+          <input type="radio" for="Q1" name="Q1" id="" value="Recreation/Entertainment">Recreation/Entertainment</input><br>
+          <input type="radio" for="Q1" name="Q1" id="" value="Both">both</input><br><br>
+		  <label for="Q2" style="color: red;">Question 2: Who is your Internet Service Provider(ISP)?</label><br>
+		  Options:<br>
+		  <input type="radio" for="Q2" name="Q2" id="" value="Airtel">Airtel</input><br>
+		  <input type="radio" for="Q2" name="Q2" id="" value="Jio">Jio</input><br>
+		  <input type="radio" for="Q2" name="Q2" id="" value="Vodafone">Vodafone</input><br>
+		  <input type="radio" for="Q2" name="Q2" id="" value="BSNL">BSNL</input><br>
+		  <input type="radio" for="Q2" name="Q2" id="" value="other">other</input><br><br>
+          <label for="Q3" style="color: red;">Question 3: How many internet using devices are currently in your home?</label><br>
+		  Options:<br>
+		  <input type="number" for="Q3" name="Q3" id=""></input><br><br>
+		  <label for="Q4" style="color: red;">Question 4: Do you use WiFi or ethernet with your computer?</label><br>
+		  Options:<br>
+		  <input type="radio" for="Q4" name="Q4" id="" value="WiFi">WiFi</input><br>
+		  <input type="radio" for="Q4" name="Q4" id="" value="Ethernet">Ethernet</input><br><br>
+		  <label for="Q5" style="color: red;">Question 5: Around how many hours a day do you use the internet?</label><br>
+		  Options:<br>
+		  <input type="radio" for="Q5" name="Q5" value="1-2 hours">1-2 hours</input><br>
+		  <input type="radio" for="Q5" name="Q5" value="3-5 hours">3-5 hours</input><br>
+		  <input type="radio" for="Q5" name="Q5" value="6-9 hours">6-9 hours</input><br>
+		  <input type="radio" for="Q5" name="Q5" value="More than 10 hours">More than 10 hours</input><br><br>
+		  <label for="Q6" style="color: red;">Question 6: Is your internet connection stable?</label><br>
+		  Options:<br>
+		  <input type="radio" for="Q6" name="Q6" id="" value="My internet is quite stable.">My internet is quite stable.</input><br>
+		  <input type="radio" for="Q6" name="Q6" id="" value="My internet is mostly stable, but it disconnects when there's harsh weather.">My internet is mostly stable, but it disconnects when there's harsh weather.</input><br>
+		  <input type="radio" for="Q6" name="Q6" id="" value="My internet is not stable at all, it frequently disconnects for no reason.">My internet is not stable at all, it frequently disconnects for no reason.</input><br><br>
+		  <label for="Q7" style="color: red;">Question 7: What is your download speed?</label><br>
+		  Options:<br>
+		  <input type="radio" for="Q7" name="Q7" id="" value="Under 1 MBps">Under 1 MBps</input><br>
+		  <input type="radio" for="Q7" name="Q7" id="" value="1-5 hours">1-5 hours.</input><br>
+		  <input type="radio" for="Q7" name="Q7" id="" value="2-10 MBps">2-10 MBps</input><br>
+		  <input type="radio" for="Q7" name="Q7" id="" value="10-30 MBps">10-30 MBps</input><br>
+		  <input type="radio" for="Q7" name="Q7" id="" value="More than 30 MBps">More than 30 MBps</input><br><br>
+		  <label for="Q8" style="color: red;">Question 8: Are you satisfied with the speed of you connection?</label><br>
+		  Options:<br>
+		  <input type="radio" for="Q8" name="Q8" id="" value="Yes">Yes</input><br>
+		  <input type="radio" for="Q8" name="Q8" id="" value="No">No, it isn't fast enough for my usage.</input><br>
+		  <input type="radio" for="Q8" name="Q8" id="" value="Depends on what the person is using the phone for.">Depends on what the person is using the phone for.</input><br><br>
+		  <input type="submit" value="Submit"><br><br>
+		  </div>
+		</form>
+	</div>
+	<script src="../../src/js/jquery-3.6.0.min.js"></script>
+	<script src="../../src/js/bootstrap.min.js"></script>
+	<script src="../js/index.js"></script>
+</body>
+</html>
