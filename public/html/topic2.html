@@ -16,10 +16,10 @@
 	</nav>
 	<div>
 		<div id="t2head" class="col-lg-12 col-sm-6 col-8"><h1 align="center" style="padding-right: 9%; color:white;">General Survey on Mobile Phones</h1></div><br><br>
-        <form name="FormSurvey" id="t2form"  action="../php/survey.php" method= POST/GET onsubmit="return validateSurveyForm();">
-			<label>Are you willing to let us use your responses for analysis?</label>
+        <form name="FormSurvey" id="t2form"  action="../php/survey.php" method= POST/GET onsubmit="return validateSurveyForm();"><br>
+			<label style="color: red;">Are you willing to let us use your responses for analysis?</label>
 			<input type="radio" for="surveyForm" name="surveyForm" value="General Survey on Mobile Phones">Yes</input>
-			<input type="radio" for="surveyForm" name="surveyForm" value="No">No</input>
+			<input type="radio" for="surveyForm" name="surveyForm" value="No">No</input><br><br>
 			<img src="..\images\mobiles.png" height="500px" width="400px" align="right" class="icons">
 			<img src="..\images\mobiles2.png" height="500px" width="400px" align="right" class="icons">
 			<div id="t1box" class="col-md-4 col-sm-6">
@@ -67,6 +67,17 @@
 		  </div>
 		</form>
 	</div>
+	<footer><button class="open-button" onclick="openForm()">Let's Chat<img src="../images/chat.png" width="60px" height="60px"></button></footer>
+	<div class="chat-popup" id="myForm">
+		<form class="form-container">
+		  <h3>Chat with us</h3>
+		  <label for="msg"><b>Message</b></label>
+		  <textarea placeholder="Type your message here.." name="msg" required></textarea>
+		  <button class="btn">Send</button>
+		  <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+		</form>
+	  </div>
+	<script src="../js/script.js"></script>
 	<script src="../js/index.js"></script>
 </body>
 </html>

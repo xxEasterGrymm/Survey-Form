@@ -46,7 +46,7 @@
 								`Question 8` = '$arr[7]'   
 							WHERE `S. no.` = $num";
                     if(mysqli_query($conn, $sql)) {
-                        echo '<br><h3><font color="green">Your response has been recorded.</font> ✅</h3>';
+                        echo '<br><h3><font color="red">Your response has been recorded.</font> ✅</h3>';
                     }
                     else {
                         echo "ERROR: Sorry! $sql. ". mysqli_error($conn);
@@ -56,6 +56,17 @@
 				?>
 			</div>
 		</div>
-	</center>
+	</center><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<footer><button class="open-button" onclick="openForm()">Let's Chat<img src="../images/chat.png" width="60px" height="60px"></button></footer>
+	<div class="chat-popup" id="myForm">
+		<form class="form-container">
+		  <h3>Chat with us</h3>
+		  <label for="msg"><b>Message</b></label>
+		  <textarea placeholder="Type your message here.." name="msg" required></textarea>
+		  <button class="btn">Send</button>
+		  <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+		</form>
+	  </div>
+	  <script src="../js/script.js"></script>
 </body>
 </html>

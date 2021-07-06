@@ -1,8 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
+
 body {
-	background-image: linear-gradient(to right, #4E4E4E ,white);
+	/*background-image: linear-gradient(to right, #4E4E4E ,white);*/
+	background: linear-gradient(to right, orange, white);
 	background-color: #223C57;
 	overflow-x: hidden;
 	overflow-y: scroll;
+	font-family: 'Poppins',Times New Roman, Times, serif;
 }
 
 /*navbar*/
@@ -17,8 +22,8 @@ nav > a {
 	font-size: 16px;
 }
 h1 {
+	font-family: 'Rancho', cursive;
 	color: white;
-	font-family: "Times New Roman";
 	font-weight: bold;
 	font-size: 50px;
 	margin-left: 125px;
@@ -86,6 +91,7 @@ input, select {
 	top: -1px;
 	padding-top: 5px;
 	margin-left: 10px;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 /*topic1 survey form*/
 #t1form {
@@ -96,7 +102,9 @@ input, select {
 	font-size: 20px;
 	padding-left: 5%;
 	padding-bottom: 30px;
-	background-image: linear-gradient(#d1adcc, #ed7966);
+	/*background-image: linear-gradient(#d1adcc, #ed7966);*/
+	background: linear-gradient(#223C57, #56A6D5);
+
 }
 #t1box {
 	box-shadow: 0 2px 5px 0 deeppink;
@@ -131,6 +139,7 @@ input, select {
 	top: -1px;
 	padding-top: 2px;
 	margin-left: 70px;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 #t2form
 {
@@ -143,7 +152,8 @@ input, select {
 	font-size: 20px;
 	padding-left: 5%;
 	padding-bottom: 30px;
-	background-image: linear-gradient(#d1adcc, #ed7966);
+	/*background-image: linear-gradient(#d1adcc, #ed7966);*/
+	background: linear-gradient(to right, #223C57, #56A6D5);
 }
 
 /*topic3 survey form*/
@@ -161,11 +171,12 @@ input, select {
 #t3head > h1 {
 	position: relative;
 	top: 9px;
+	left: 20px;
 	padding-left: 5%;
-	margin-left: 110px;
+	margin-left: 67px;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-#t3form
-{
+#t3form {
 	font-family: 'Times New Roman';
 	border: 2px solid black;
 	border-radius: 25px;
@@ -175,5 +186,83 @@ input, select {
 	font-size: 20px;
 	padding-left: 5%;
 	padding-bottom: 30px;
-	background-image: linear-gradient(#d1adcc, #ed7966);
+	/*background-image: linear-gradient(#d1adcc, #ed7966);*/
+	background: linear-gradient(to right, #223C57, #56A6D5);
 }
+
+footer {
+    position: sticky;
+    float: right;
+    bottom: 15px;
+    right: 15px;
+    z-index: 100;
+}
+footer > button {
+    padding: 4px 10px;
+    color: #000000;
+    text-decoration: none;
+    border-radius: 20px;
+    font-weight: bold;
+    background-color: orange;
+}
+footer > button:hover {
+    color: #094b65;
+    background-color: white;
+}
+/* The popup chat - hidden by default */
+.chat-popup {
+    display: none;
+    position: fixed;
+    bottom: 10px;
+    right: 15px;
+    border: 2px solid black;
+    z-index: 100;
+    border-radius: 25px;
+  }
+  
+  /* Add styles to the form container */
+  .form-container {
+    max-width: 300px;
+    padding: 10px;
+    border-radius: 25px;
+    background-color: peachpuff;
+  }
+  
+  /* Full-width textarea */
+  .form-container textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+    resize: none;
+    min-height: 200px;
+  }
+  
+  /* When the textarea gets focus, do something */
+  .form-container textarea:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  /* Set a style for the submit/send button */
+  .form-container .btn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+  }
+  
+  /* Add a red background color to the cancel button */
+  .form-container .cancel {
+    background-color: red;
+  }
+  
+  /* Add some hover effects to buttons */
+  .form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+  }

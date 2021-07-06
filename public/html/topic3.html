@@ -17,7 +17,7 @@
 	<div>
 		<div id="t3head" class="col-lg-12 col-sm-6 col-8"><h1 align="center" style="padding-right: 17%; color:white;">Network Usage Survey</h1></div><br><br>
         <form name="FormSurvey" id="t3form"  action="../php/survey.php" method= POST/GET onsubmit="return validateSurveyForm();"><br>
-		  <label>Are you willing to let us use your responses for analysis?</label>
+		  <label style="color: red;">Are you willing to let us use your responses for analysis?</label>
 		  <input type="radio" for="surveyForm" name="surveyForm" value="Network Usage Survey">Yes</input>
 		  <input type="radio" for="surveyForm" name="surveyForm" value="No">No</input><br><br>
           <img src="..\images\net1.png" height="450px" width="400px" align="right" class="icons" style="padding-left: 5%;">
@@ -68,6 +68,17 @@
 		  </div>
 		</form>
 	</div>
+	<footer><button class="open-button" onclick="openForm()">Let's Chat<img src="../images/chat.png" width="60px" height="60px"></button></footer>
+	<div class="chat-popup" id="myForm">
+		<form class="form-container">
+		  <h3>Chat with us</h3>
+		  <label for="msg"><b>Message</b></label>
+		  <textarea placeholder="Type your message here.." name="msg" required></textarea>
+		  <button class="btn">Send</button>
+		  <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+		</form>
+	  </div>
+	<script src="../js/script.js"></script>
 	<script src="../js/index.js"></script>
 </body>
 </html>

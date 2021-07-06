@@ -20,7 +20,14 @@ window.addEventListener('scroll', function() {
     bird2.style.top = value * -1.5 + 'px';
     bird2.style.left = value * -3 + 'px';
     btn.style.marginTop = value + 'px';
-    rocks.style.top = vallue * -0.12 + 'px';
-    forest.style.top = value * 0.25 + 'px';
+    rocks.style.top = value * -0.12 + 'px';
+    forest.style.top = value * 0.12 + 'px';
     header.style.top = value * 0.5 + 'px';
 })
+function openForm() {
+    document.getElementById("myForm").style.display = "block";
+  }
+  
+  function closeForm() {
+    document.getElementById("myForm").style.display = "none";
+  }

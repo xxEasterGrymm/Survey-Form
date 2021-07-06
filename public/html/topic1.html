@@ -20,9 +20,9 @@
 	<div class="container-fluid">
 		<br>
 		<form name="FormSurvey" id="t1form" action="../php/survey.php" method= POST/GET onsubmit="return validateSurveyForm();"><br>
-			<label>Are you willing to let us use your responses for analysis?</label>
+			<label style="color: red;">Are you willing to let us use your responses for analysis?</label>
 			<input type="radio" for="surveyForm" name="surveyForm" value="Web Browser Review">Yes</input>
-			<input type="radio" for="surveyForm" name="surveyForm" value="No">No</input>
+			<input type="radio" for="surveyForm" name="surveyForm" value="No">No</input><br>
 		  	<img class="icons" src="https://image.flaticon.com/icons/png/512/183/183316.png" height="100px" width="100px">
 		  	<img class="icons" src="https://image.flaticon.com/icons/png/512/183/183320.png" height="100px" width="100px">
 		  	<img class="icons" src="https://image.flaticon.com/icons/png/512/183/183317.png" height="100px" width="100px">
@@ -77,6 +77,17 @@
 		  </div>
 		</form>
 	</div>
+	<footer><button class="open-button" onclick="openForm()">Let's Chat<img src="../images/chat.png" width="60px" height="60px"></button></footer>
+	<div class="chat-popup" id="myForm">
+		<form class="form-container">
+		  <h3>Chat with us</h3>
+		  <label for="msg"><b>Message</b></label>
+		  <textarea placeholder="Type your message here.." name="msg" required></textarea>
+		  <button class="btn">Send</button>
+		  <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+		</form>
+	  </div>
+	<script src="../js/script.js"></script>
 	<script src="../js/index.js"></script>
 </body>
 </html>

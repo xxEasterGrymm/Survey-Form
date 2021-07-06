@@ -40,7 +40,7 @@
 				     else {
 				      		echo "ERROR: Sorry! $sql. ". mysqli_error($conn);
 					}
-					    // Close connection
+					// Close connection
 					mysqli_close($conn);
 				?>
 			</div>
@@ -52,6 +52,17 @@
 			<li><a href="../html/topic2.html">General Survey on Mobile Phones--></a></li>
 			<li><a href="../html/topic3.html">Network Usage Survey--></a></li>
 		</ul>
-	</div>
+	</div><br><br><br><br><br><br><br><br>
+	<footer><button class="open-button" onclick="openForm()">Let's Chat<img src="../images/chat.png" width="60px" height="60px"></button></footer>
+	<div class="chat-popup" id="myForm">
+		<form class="form-container">
+		  <h3>Chat with us</h3>
+		  <label for="msg"><b>Message</b></label>
+		  <textarea placeholder="Type your message here.." name="msg" required></textarea>
+		  <button class="btn">Send</button>
+		  <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+		</form>
+	  </div>
+	  <script src="../js/script.js"></script>
 </body>
 </html>
