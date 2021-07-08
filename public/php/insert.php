@@ -46,12 +46,14 @@
 			</div>
 		</div>
 	</center>
-	<div>
-		<ul><h4>Which survey do you want to take?</h4>
-			<li><a href="../html/topic1.html">Web Browser Review--></a></li>
-			<li><a href="../html/topic2.html">General Survey on Mobile Phones--></a></li>
-			<li><a href="../html/topic3.html">Network Usage Survey--></a></li>
-		</ul>
+	<div id="surveycontainer" class="container-fluid">
+		<div id="surveylist" class="col-md-4 col-sm-6">
+			<ul><h4><font color="white">Which survey do you want to take?</font></h4>
+				<li><a href="../html/topic1.html">Web Browser Review--></a></li>
+				<li><a href="../html/topic2.html">General Survey on Mobile Phones--></a></li>
+				<li><a href="../html/topic3.html">Network Usage Survey--></a></li>
+			</ul>
+		</div>
 	</div><br><br><br><br><br><br><br><br>
 	<footer><button class="open-button" onclick="openForm()">Let's Chat<img src="../images/chat.png" width="60px" height="60px"></button></footer>
 	<div class="chat-popup" id="myForm">
