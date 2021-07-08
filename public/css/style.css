@@ -2,8 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
 
 body {
-	/*background-image: linear-gradient(to right, #4E4E4E ,white);*/
-	background: linear-gradient(to right, orange, white);
+	background-image: url(../images/cloud.jpg);
 	background-color: #223C57;
 	overflow-x: hidden;
 	overflow-y: scroll;
@@ -102,7 +101,6 @@ input, select {
 	font-size: 20px;
 	padding-left: 5%;
 	padding-bottom: 30px;
-	/*background-image: linear-gradient(#d1adcc, #ed7966);*/
 	background: linear-gradient(#223C57, #56A6D5);
 
 }
@@ -152,7 +150,6 @@ input, select {
 	font-size: 20px;
 	padding-left: 5%;
 	padding-bottom: 30px;
-	/*background-image: linear-gradient(#d1adcc, #ed7966);*/
 	background: linear-gradient(to right, #223C57, #56A6D5);
 }
 
@@ -186,7 +183,6 @@ input, select {
 	font-size: 20px;
 	padding-left: 5%;
 	padding-bottom: 30px;
-	/*background-image: linear-gradient(#d1adcc, #ed7966);*/
 	background: linear-gradient(to right, #223C57, #56A6D5);
 }
 
