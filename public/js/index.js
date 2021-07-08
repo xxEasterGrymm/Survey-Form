@@ -9,7 +9,7 @@ function validateForm() {
       alert("Please fill all the fields before proceeding");
       return false;
     }
-    else if(age > 120) {
+    else if(age > 120 || age < 13 ) {
       alert("Please enter a valid age!");
       return false;
     }
