@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
-
+html{
+    scroll-behavior: smooth;
+}
 * {
     font-family: 'Poppins',Times New Roman, Times, serif;
     box-sizing: border-box;
@@ -99,18 +101,32 @@ section #text {
     border-radius: 40px;
     transform: translateY(14vh); 
 }
-.section {
+#btn{
+    display: inline-block;
+    padding: 8px 30px;
+    background: #fff;
+    color: #094b65;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 2px;
+    border-radius: 40px; 
+    transform: translate(70vh,5vh);
+}
+div.section {
     position: relative;
     padding: 100px;
     background: #094b65;
 }
-.section h2 {
+div.section h2 {
     font-size: 3.5em;
+    text-align: left;
     color: #fff;
     margin-bottom: 10px;
 }
 .section p {
-    font-size: 1em;
+    text-align: left;
+    font-size: 2.5vh;
+
     color: #fff;
 }
 footer {
