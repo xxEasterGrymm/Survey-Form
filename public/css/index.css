@@ -47,6 +47,7 @@ header ul li a {
     color: #094b65;
     text-decoration: none;
     border-radius: 20px;
+    font-weight: 600;
 }
 header ul li a:hover {
     background: #094b65;
@@ -96,7 +97,7 @@ section #text {
 }
 #button {
     display: inline-block;
-    padding: 8px 30px;
+    padding: 8px 20px;
     background: #fff;
     color: #094b65;
     text-decoration: none;
@@ -105,9 +106,9 @@ section #text {
     border-radius: 40px;
     transform: translateY(14vh); 
 }
-#btn{
+#btn {
     display: inline-block;
-    padding: 8px 30px;
+    padding: 8px 20px;
     background: #fff;
     color: #094b65;
     text-decoration: none;
@@ -208,4 +209,7 @@ footer > button:hover {
   /* Add some hover effects to buttons */
   .form-container .btn:hover, .open-button:hover {
     opacity: 1;
+  }
+  #end {
+      background-color: #094b65;
   }
