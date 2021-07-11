@@ -20,7 +20,7 @@
 				<?php
 				    $conn = mysqli_connect("localhost", "root", "", "test");
 				    // Check connection
-				        if($conn === false)die("ERROR: Could not connect. ". mysqli_connect_error());
+				        if($conn === false) die("ERROR: Could not connect. ". mysqli_connect_error());
 				        // Taking values from the form data(input)
 				        $name = $_REQUEST['name'];
 				        $age = $_REQUEST['age'];
