@@ -74,7 +74,7 @@ div.main h1 {
     text-align: center;
     line-height: 0.55em;
     transform: translateY(-20vh);
-    animation: FadeIn 2s;
+    animation: FadeIn 4s;
 }
 @keyframes FadeIn {
     from{opacity: 0;}

@@ -88,6 +88,11 @@ section #text {
     text-align: center;
     transform: translateY(-24vh);
     line-height: 0.55em;
+    animation: FadeIn 4s;
+}
+@keyframes FadeIn {
+    from{opacity: 0;}
+    to{opacity: 1;}
 }
 #button {
     display: inline-block;
