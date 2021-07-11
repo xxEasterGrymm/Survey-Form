@@ -54,6 +54,7 @@ header ul li a {
     color: #094b65;
     text-decoration: none;
     border-radius: 20px;
+    font-weight: 600;
 }
 /*nav bar hover effects*/
 header ul li a:hover {
@@ -81,7 +82,6 @@ div.main h1 {
     to {opacity: 1;}
 }
 div a {
-    font-size: 30px;
     font-family: 'Poppins',Cambria, Cochin, Georgia, Times, serif;
 }
 div a.scroll {
@@ -92,7 +92,7 @@ div a.scroll {
     color: #094b65;
     background-color: white;
     text-decoration: none;
-    font-weight: 700;
+    font-weight: 600;
     letter-spacing: 2px;
     border-radius: 40px;
     transform: translate(80vh,50vh); 
