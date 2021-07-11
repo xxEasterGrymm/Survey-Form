@@ -1,11 +1,129 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+html{
+    scroll-behavior: smooth;
+}
+* {
+    font-family: 'Poppins',Times New Roman, Times, serif;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
 body {
-	/*background-image: linear-gradient(to right, #4E4E4E ,white);*/
-	background: linear-gradient( orange, white);
+	/*background-image: linear-gradient;*/
+	background: linear-gradient( orange, #ff5349);
+    background-position-x: 600%;
 	background-color: #223C57;
 	overflow-x: hidden;
 	overflow-y: scroll;
+    min-height: 100vh;
 	font-family: 'Poppins',Times New Roman, Times, serif;
+}
+header {
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    left: 0px;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    position: sticky;
+}
+header .brand {
+    color: #094b65;
+    font-weight: 800;
+    font-size: 3em;
+    text-decoration: none;
+    font-family: 'Rancho', cursive;
+}
+header ul {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+header ul li {
+    list-style: none;
+    margin-left: 25px;
+}
+header ul li a {
+    padding: 6px 15px;
+    color: #094b65;
+    text-decoration: none;
+    border-radius: 20px;
+}
+/*nav bar hover effects*/
+header ul li a:hover {
+    background: #094b65;
+    color: #fff;
+}
+div.main{
+    height: 100%;
+    width: 100%;
+}
+div.main h1{
+    font-family: 'Rancho', cursive;
+    position: relative;
+    color:#094b65;
+    font-weight: 700;
+    font-size: 8vw;
+    text-align: center;
+    line-height: 0.55em;
+    transform: translateY(-20vh);
+    animation: FadeIn 2s;
+}
+@keyframes FadeIn {
+    from{opacity: 0;}
+    to {opacity: 1;}
+}
+div a{
+    font-size: 30px;
+    font-family: 'Poppins',Cambria, Cochin, Georgia, Times, serif;
+}
+div a.scroll {
+    justify-content: center;
+    align-items: center;
+    display: inline-block;
+    padding: 8px 30px;
+    color: #094b65;
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 2px;
+    border-radius: 40px;
+    transform: translate(80vh,50vh); 
+}
+div a.scroll:hover{
+    background: #094b65;
+    color: #fff;
+}
+div.section{
+	position: relative;
+    width: 100%;
+	transform: translateY(100%);
+    background: #ff5349;
+}
+div.section {
+    position: relative;
+    padding: 100px;
+}
+div.section h2 {
+    font-family: 'Poppins',Calibri;
+    text-align: center;
+    font-size: 3.5em;
+    color: #fff;
+    margin-bottom: 10px;
+}
+div.section p {
+    font-family: 'Calibri',Times New Roman, Times, serif;
+    font-size: 4vh;
+    text-align: center;
+    color: #fff;
+}
+div p.final{
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+    font-size: 2em;
+    transform: translateY(2em);
 }
