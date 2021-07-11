@@ -11,7 +11,7 @@
 <body>
 	<nav class="container-fluid">
 		<a href = "../index.html">Home</a>
-		<a href="about.html">About Us</a>
+		<a href="../html/about.html">About Us</a>
 		<div class="col-lg-12  col-sm-6 col-8"><h1 align="center">Survey Form</h1></div>
 	</nav>
 	<center>

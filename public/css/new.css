@@ -66,6 +66,7 @@ div.main{
 div.main h1{
     font-family: 'Rancho', cursive;
     position: relative;
+    top: 430px;
     color:#094b65;
     font-weight: 700;
     font-size: 8vw;

@@ -23,11 +23,12 @@ window.addEventListener('scroll', function() {
     rocks.style.top = value * -0.12 + 'px';
     forest.style.top = value * 0.12 + 'px';
     header.style.top = value * 0.5 + 'px';
-})
+});
+
 function openForm() {
     document.getElementById("myForm").style.display = "block";
-  }
+}
   
-  function closeForm() {
+function closeForm() {
     document.getElementById("myForm").style.display = "none";
-  }
+}
