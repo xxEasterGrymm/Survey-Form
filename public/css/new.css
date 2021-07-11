@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
-html{
+
+html {
     scroll-behavior: smooth;
 }
 * {
@@ -63,7 +64,7 @@ div.main{
     height: 100%;
     width: 100%;
 }
-div.main h1{
+div.main h1 {
     font-family: 'Rancho', cursive;
     position: relative;
     top: 430px;
@@ -79,7 +80,7 @@ div.main h1{
     from{opacity: 0;}
     to {opacity: 1;}
 }
-div a{
+div a {
     font-size: 30px;
     font-family: 'Poppins',Cambria, Cochin, Georgia, Times, serif;
 }
@@ -95,11 +96,11 @@ div a.scroll {
     border-radius: 40px;
     transform: translate(80vh,50vh); 
 }
-div a.scroll:hover{
+div a.scroll:hover {
     background: #094b65;
     color: #fff;
 }
-div.section{
+div.section {
 	position: relative;
     width: 100%;
 	transform: translateY(100%);
@@ -122,7 +123,7 @@ div.section p {
     text-align: center;
     color: #fff;
 }
-div p.final{
+div p.final {
     font-family: 'Pacifico', cursive;
     text-align: center;
     font-size: 2em;
