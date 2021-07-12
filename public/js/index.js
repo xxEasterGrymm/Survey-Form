@@ -14,6 +14,7 @@ function validateForm() {
       return false;
     }
 }
+
 function validateSurveyForm() {
     var arr = [""];
     for(let i = 1; i <= 8; i++) {
