@@ -18,7 +18,7 @@
 		<div id="containerdetails" class="container-fluid">
 			<div id="t1form" class="col-md-4 col-sm-6">
 				<?php
-				    $conn = mysqli_connect("localhost", "root", "", "test");
+				    $conn = mysqli_connect("localhost", "root", "", "records");
 				    // Check connection
 				    if($conn === false)die("ERROR: Could not connect. ". mysqli_connect_error());
 				    // Taking values from the form data(input)
@@ -31,10 +31,10 @@
                         array_push($arr, $key);
                     }
 				    // Performing insert query execution
-					$sql = "SELECT * FROM `answers`";
+					$sql = "SELECT * FROM `responses`";
 					$res = mysqli_query($conn, $sql);
 					$num = mysqli_num_rows($res);
-				    $sql = "UPDATE `answers`
+				    $sql = "UPDATE `responses`
 					   		SET `Survey` = '$form',
 							   	`Question 1` = '$arr[0]',
 								`Question 2` = '$arr[1]',

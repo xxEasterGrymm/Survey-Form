@@ -18,7 +18,7 @@
 		<div id="containerdetails" class="container-fluid">
 			<div id="details" class="col-md-4 col-sm-6">
 				<?php
-				    $conn = mysqli_connect("localhost", "root", "", "test");
+				    $conn = mysqli_connect("localhost", "root", "", "records");
 				    // Check connection
 				        if($conn === false) die("ERROR: Could not connect. ". mysqli_connect_error());
 				        // Taking values from the form data(input)
@@ -31,7 +31,7 @@
 				        // Performing insert query execution
 						if($quali == "Bachelor's Degree") $quali = "Bachelors Degree";
 						else if($quali == "Master's Degree") $quali = "Masters Degree";
-				       	$sql = "INSERT INTO `answers` (`name`, `age`, `address`, `Email ID`, `Gender`, `Educational Qualification`)
+				       	$sql = "INSERT INTO `responses` (`name`, `age`, `address`, `Email ID`, `Gender`, `Educational Qualification`)
 						   		VALUES ('$name', '$age', '$address', '$email', '$gender', '$quali')";
 				       	if(mysqli_query($conn, $sql)) {
 				       		echo '<h3><font color="lightgreen">Your details have been recorded.</font> ✅</h3>';

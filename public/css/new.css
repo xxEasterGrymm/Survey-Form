@@ -141,3 +141,10 @@ img {
     z-index: -10;
     top: -60px;
 }
+footer a:link {
+    text-decoration: none;
+    color: black;
+}
+footer a:hover {
+    text-decoration: underline;
+}
