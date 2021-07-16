@@ -8,5 +8,5 @@ Static Web Page Site Link:- https://xxeastergrymm.github.io/Survey-Form/public/
 2. Switch on the Apache and MySQL servers on the XAMPP control panel.
 3. Clone this repository in `xampp\htdocs`.
 4. Now open http://localhost/survey-form/public/ on your browser.
-5. Create a database `test` with a table named `answers`, with the respecive column names and their types.
+5. Create a database `records` with a table named `responses`, with the respecive column names and their types.
 6. After submitting your response, head over to http://localhost/phpmyadmin/ to view the recorded responses.
